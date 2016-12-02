@@ -1,0 +1,113 @@
+/* styles.css */
+
+body {
+    background: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+}
+
+.container:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+ul {
+    width: 48%;
+    float: left;
+    margin: 0;
+    padding: 0 1%;
+    list-style: none;
+}
+
+#todo-list-wrapper {
+    width: 960px;
+    text-align: center;
+}
+
+#todo-list:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+#todo-list ul {
+    width: 14.28%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#todo-list li {
+    background: none;
+    padding: 5px;
+    border: none;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+}
+
+#todo-list li:hover {
+    background: #eee;
+}
+
+#todo-list li.list-title {
+    background: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-right: solid 1px white;
+    font-size: 14px;
+}
+
+#todo-list li.list-title:hover,
+#todo-list li.list-title:active {
+    cursor: default;
+    transform: none;
+}
+
+#todo-list .empty-space {
+    background: #fc3;
+    border: dashed 1px #777;
+    height: 10px;
+}
+
+#todo-list li.add-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: none;
+}
+
+#todo-list ul:hover li.add-item {
+    display: block;
+}
+
+#todo-list li.add-item input {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4px;
+}
+
+#todo-list li.add-item:active {
+    transform: none;
+}
+
+#trash {
+    background: rgba(178, 73, 38, 0.7);
+    color: white;
+    height: 200px;
+    width: 400px;
+    margin: 50px auto 0;
+    line-height: 200px;
+    text-align: center;
+}
